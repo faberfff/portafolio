@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="./images/fondo1.jpg"/>
+        <title>Portafolio <-> Faber Fernández Fernández</title>
+        <!--box icon-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+        <!--script-->
+        <script src="./js/query.js"></script>
+        <script type="text/JavaScript">
+            $('#header').hide();
+        $('#home').hide();
+        $('#about').hide();
+        $('#services').hide();
+        $('#portafolio').hide();
+        $('#experience').hide();
+        $('#education').hide();
+        $('#contact').hide();
+        $('#footer-iconTop').hide();
+        </script>
+        <script src="./js/popup.js"></script>
+        <!--css-->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body onload="openDialog();" >
+        <div class="content contact" id="content">
+            <div class="overlay" id="overlay">
+                <div class="popup" id="popup">
+                    <a onclick="closeDialog('popup');" class="close"></a>
+                    <h2 class="heading">De interes <span>A quien pueda interesar:</span></h2>
+                    
+                    <form name="submit-to-google-sheet" autocomplete="off" >
+                        <p>En la actualidad me encuentro en busqueda de una oferta laboral, que se acomode a mi perfil Junior<br> <br>Agradezco su atención prestada y estaré atento en caso que requiera alguna información adicional. ¡No dudes en escribirme!</p>
+                        <div class="input-box" id="input-box">
+                            <input autocomplete="off" type="text" name="Name" id="Name" placeholder="Nombres" required>
+                            <input autocomplete="off" type="email" name="Email" id="Email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="input-box" id="input-box">
+                            <input autocomplete="off" type="tel" name="Phone" id="Phone" placeholder="Número de teléfono"  maxlength="10" >
+                            <input autocomplete="off" type="text" name="Subject" id="Subject" placeholder="Asunto" required>
+                        </div>
+                        <textarea autocomplete="off" name="Message" id="Messague"  rows="3" placeholder=" Mensaje" required></textarea>
+                        <input type="datetime-local" name="Date-local" id="datetime-local" name="meeting-time" readonly hidden />
+                        <button type="submit" class="btn btn2">Enviar</button>
+                        <span class="msg" id="msg"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <footer class="footer" >
+            <div class="footer-text">
+                <p>
+                    <p>Derechos reservados &copy; <script>document.write(new Date().getFullYear())</script> Faber Fernández Fernández</p>
+                </p>
+            </div>
+            <div class="footer-iconTop" id="footer-iconTop">
+                <a href="#home"><i class='bx bxs-up-arrow' ></i></i></a>
+            </div>
+        </footer>
+            <!--script reveal-->
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <!--typed js-->
+            <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
